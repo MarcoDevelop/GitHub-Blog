@@ -1,4 +1,5 @@
 export const defaultTheme = {
+  white2: '#f9fafb',
   colors: {
     'base-input': '#040F1A',
     'base-background': '#071422',
