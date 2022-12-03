@@ -7,5 +7,10 @@ export const HeaderContainer = styled.div`
   background: url(${background}) no-repeat center;
   background-size: cover;
   display: flex;
+  align-items: center;
   justify-content: center;
+
+  img {
+    margin-bottom: 5rem;
+  }
 `
