@@ -1,3 +1,5 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faBuilding, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { LinkProfile } from '../LinkProfile'
 import { ProfileContainer, ProfileDetails, ProfileImage } from './styles'
@@ -19,10 +21,17 @@ export function Profile() {
         </p>
         <ul>
           <li>
-            <FontAwesomeIcon icon={} />
+            <FontAwesomeIcon icon={faGithub} />
+            MarcoDevelop
           </li>
-          <li></li>
-          <li></li>
+          <li>
+            <FontAwesomeIcon icon={faBuilding} />
+            Empresa
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faUserGroup} />
+            11 seguidores
+          </li>
         </ul>
       </ProfileDetails>
     </ProfileContainer>
