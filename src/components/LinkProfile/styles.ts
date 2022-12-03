@@ -20,5 +20,6 @@ export const LinkProfileContainer = styled.a`
   }
 
   &:hover {
+    border-color: ${({ theme }) => theme.colors['brand-blue']};
   }
 `
