@@ -3,7 +3,12 @@ import logoSrc from '../../assets/Logo.svg'
 import { LinkProfile } from '../LinkProfile'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faCalendar, faComment } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCalendar,
+  faChevronLeft,
+  faComment,
+} from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom'
 
 export function Header() {
   return (
@@ -14,10 +19,21 @@ export function Header() {
 }
 
 export function HeaderPost() {
+  const navigate = useNavigate()
+  function goBack() {
+    navigate(-1)
+  }
+
   return (
     <HeaderPostContainer>
       <header>
-        <LinkProfile text="Voltar" href="#" />
+        <LinkProfile
+          as="button"
+          onClick={goBack}
+          icon={<FontAwesomeIcon icon={faChevronLeft} />}
+          text="Voltar"
+          variant="iconLeft"
+        />
         <LinkProfile text="Ver no GitHub" href="#" target="_blank" />
       </header>
 

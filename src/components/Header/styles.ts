@@ -52,6 +52,8 @@ export const HeaderPostContainer = styled.section`
       display: flex;
       align-items: center;
       color: ${({ theme }) => theme.colors['base-span']};
+      //Alinhar icone ao texto
+      line-height: 0px;
 
       svg {
         color: ${({ theme }) => theme.colors['base-label']};

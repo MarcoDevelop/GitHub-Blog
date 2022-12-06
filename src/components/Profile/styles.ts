@@ -49,6 +49,8 @@ export const ProfileDetails = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    //Alinhar icone ao texto
+    line-height: 0px;
 
     svg {
       width: 1.125rem;
