@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './App'
+
 import moment from 'moment'
-import 'moment/locale/pt-br'
+import 'moment/dist/locale/pt-br'
 
 moment.locale('pt-br')
 
