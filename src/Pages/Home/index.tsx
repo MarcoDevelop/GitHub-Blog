@@ -32,7 +32,6 @@ export function Home() {
           `/search/issues?q=${query}%20repo:${username}/${repoName}`,
         )
 
-        console.log(response.data)
         setPosts(response.data.items)
       } finally {
         setIsLoading(false)
@@ -48,7 +47,7 @@ export function Home() {
   return (
     <>
       <Profile />
-      <SearchInput />
+      <SearchInput getPosts={getPosts} />
       <PostsListContainer>
         {posts.map((post) => (
           <Publications key={post.number} post={post} />
