@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Publications } from '../../components/Post'
 import { Profile } from '../../components/Profile'
 import { SearchInput } from '../../components/SearchInput'
+import { Spinner } from '../../components/Spinner'
 import { api } from '../../lib/axios'
 import { PostsListContainer } from './styles'
 
@@ -44,12 +45,16 @@ export function Home() {
   return (
     <>
       <Profile />
-      <SearchInput getPosts={getPosts} />
-      <PostsListContainer>
-        {posts.map((post) => (
-          <Publications key={post.number} post={post} />
-        ))}
-      </PostsListContainer>
+      <SearchInput postsLength={posts.length} getPosts={getPosts} />
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <PostsListContainer>
+          {posts.map((post) => (
+            <Publications key={post.number} post={post} />
+          ))}
+        </PostsListContainer>
+      )}
     </>
   )
 }
