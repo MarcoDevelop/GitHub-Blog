@@ -9,7 +9,7 @@
 </p>
 <br/><br/>
 
-
+![image](https://user-images.githubusercontent.com/45787976/206861484-fd0fddd5-c131-42e4-917f-10678b57d84a.png)
 
 <br/><br/>
 
@@ -43,7 +43,7 @@ A aplicação pode ser acessada em [`localhost:5173`](http://localhost:5173).
 
 
 ## 💻 Projeto
-Aplicação React com o Vite, nele foi utilizado os conceitos do React, entre eles estão componentização, estados, contextAPI, LocalStorage, Imutabilidade do estado, Listas Propriedades e styled-components, além de aplicar o TypeScript no projeto para adicionar tipagem estática à aplicação. 
+Aplicação React com o Vite, nele foi utilizado os conceitos do React, entre eles estão componentização, estados, Imutabilidade do estado, Listas Propriedades, styled-components e consumo da API do GitHub além de aplicar o TypeScript no projeto para adicionar tipagem estática à aplicação. 
 
 ## 🔖 Layout
 
