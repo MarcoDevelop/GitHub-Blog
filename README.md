@@ -43,7 +43,7 @@ A aplicação pode ser acessada em [`localhost:5173`](http://localhost:5173).
 
 
 ## 💻 Projeto
-Aplicação React com o Vite, nele foi utilizado os conceitos do React, entre eles estão componentização, estados, Imutabilidade do estado, Listas Propriedades, styled-components e consumo da API do GitHub além de aplicar o TypeScript no projeto para adicionar tipagem estática à aplicação. 
+Aplicação React com o Vite, nele foi utilizado os conceitos do React, entre eles estão componentização, estados, Imutabilidade do estado, Listas Propriedades, styled-components e consumo da API REST do GitHub além de aplicar o TypeScript no projeto para adicionar tipagem estática à aplicação. 
 
 ## 🔖 Layout
 
